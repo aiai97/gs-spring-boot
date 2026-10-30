@@ -17,6 +17,9 @@ public class Application {
     String[] beanNames = ctx.getBeanDefinitionNames();
     Arrays.sort(beanNames);
     for (String beanName : beanNames) {
+      if(beanName.contains("view")) {
+        System.out.println("view beanName: " + beanName);
+      }
       System.out.println(beanName);
     }
   }
