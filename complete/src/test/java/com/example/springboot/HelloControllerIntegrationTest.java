@@ -20,4 +20,11 @@ public class HelloControllerIntegrationTest {
         .expectBody(String.class)
         .isEqualTo("Greetings from Spring Boot!");
   }
+
+  @Test
+  public void getGreetings() {
+    client.get().uri("/").exchangeSuccessfully()
+            .expectBody(String.class)
+            .isEqualTo("Greetings from Spring Boot!");
+  }
 }
