@@ -15,7 +15,7 @@
   <properties>
     <java.version>17</java.version>
   </properties>
-  <dependencies>
+  docker inspect spring-boot-app<dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webmvc</artifactId>
@@ -31,6 +31,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+
+
+
+
   </dependencies>
 
   <build>
