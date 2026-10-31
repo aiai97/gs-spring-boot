@@ -15,7 +15,7 @@
   <properties>
     <java.version>17</java.version>
   </properties>
-  docker inspect spring-boot-app<dependencies>
+  <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webmvc</artifactId>
@@ -31,9 +31,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
-
-
-
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <optional>true</optional>  <!-- prevents other modules that depend on your project from automatically inheriting the DevTools dependency. -->
+  </dependency>
 
   </dependencies>
 

@@ -18,3 +18,5 @@ use maven plugin to build docker image
 docker logs spring-boot-app | tail -n 10
 docker ps -a     , check whether a container is running or not
 ![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
